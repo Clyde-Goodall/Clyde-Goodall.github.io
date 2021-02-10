@@ -87,6 +87,11 @@ a {
     align-items: center;
 }
 
+#contact {
+    background: rgba(255, 255, 255, .1);
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
 a:visited {
     color: rgba(230, 230, 230);
 }
@@ -96,6 +101,65 @@ a:visited {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    /* padding: 200px 0px 200px 0px; */
+}
+
+
+/* .content-block {
+    margin-top: 200px;
+} */
+
+.contact-form {
+    display: block;
+}
+
+.contact-button {
+    backface-visibility: hidden;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, .4);
+    background: rgba(255, 255, 255, .8);
+    background-image: linear-gradient(to top right, rgb(125, 150, 156), rgb(137, 160, 165), rgb(149, 169, 174), rgb(160, 179, 183), rgb(172, 188, 192), rgb(184, 198, 201), rgb(196, 207, 210), rgb(208, 217, 219), rgb(220, 226, 228), rgb(231, 236, 237), rgb(243, 245, 246), rgb(255, 255, 255));
+    border-radius: 4px;
+    color: rgb(30, 30, 30, );
+    border: 1px rgba(0, 0, 0, .3);
+    font-family: Consolas;
+    font-size: 16pt;
+    width: 160px;
+    height: 50px;
+    transition: all .5s;
+}
+
+.contact-input {
+    font-family: "Source Sans Pro";
+    font-size: 16pt;
+    outline: none;
+    display: inline-block;
+    border: 3px solid rgba(255, 255, 255, .8);
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    height: 30px;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: auto;
+    background: rgba(255, 255, 255, .2);
+    transition: all .5s;
+}
+
+.contact-message {
+    padding-top: 20px;
+    outline: none;
+    display: inline-block;
+    font-family: "Source Sans Pro";
+    border: 3px solid rgba(255, 255, 255, .8);
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    height: 200px;
+    padding: 15px;
+    width: 600px;
+    background: rgba(255, 255, 255, .2);
+    font-family: "Source Sans Pro";
+    font-size: 16pt;
+    margin: 20px 0px 40px 0px;
+    transition: all .5s;
 }
 
 
@@ -197,15 +261,18 @@ a:visited {
 /*  desktop */
 
 @media only screen and (min-width: 1000px) and (min-device-width:1000px) {
+    html,
+    body {
+        scroll-behavior: smooth;
+    }
     .content-block {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 500px;
+        min-height: 100%;
         width: 100%;
     }
     .content-block-inner {
-        margin-top: 200px;
         max-width: 65%;
         height: 100%;
         display: flex;
@@ -229,8 +296,13 @@ a:visited {
         text-shadow: 0px 4px 12px rgba(0, 0, 0, 1);
         user-select: none;
     }
+    .contact-card {
+        min-width: 900px;
+        min-height: 600px;
+    }
     .nav {
-        position: sticky;
+        z-index: 3000;
+        position: fixed;
         width: 100%;
         box-sizing: border-box;
         padding: none;
@@ -276,6 +348,12 @@ a:visited {
         width: 50px;
         height: 50px;
         margin-left: 20px;
+    }
+    .contact-button:hover {
+        box-shadow: 0px 0px 12px rgba(255, 255, 255, .2);
+    }
+    .contact:active {
+        box-shadow: inset 0px 0px 15px 1px rgba(0, 0, 0, .1), 0px 0px 12px rgba(255, 255, 255, .2);
     }
 }
 
