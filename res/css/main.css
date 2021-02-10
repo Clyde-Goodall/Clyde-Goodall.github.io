@@ -63,7 +63,6 @@ body {
     border: 1px solid rgb(17, 27, 34);
     border-radius: 4px;
     width: auto;
-    font-size: 15pt;
     display: inline-block;
     box-sizing: border-box;
     padding: 10px 15px 10px 15px;
@@ -75,16 +74,129 @@ a {
     text-decoration: none;
 }
 
+.footer {
+    background: rgba(0, 0, 0, .25);
+    color: white;
+    font-size: 14pt;
+    text-align: left;
+    width: 100%;
+    height: 200px;
+    margin-top: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 a:visited {
     color: rgba(230, 230, 230);
 }
 
-@media (max-width: 800px) {
-    /*  mobile */
+.content-block-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-@media (max-width: 2560px) {
-    /*  desktop */
+
+/*  mobile */
+
+@media only screen and (max-device-width: 999px) and (max-width:999px) {
+    .content-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+        width: 100%;
+    }
+    .content-block-inner {
+        margin-top: 100px;
+        padding-bottom: 100px;
+        max-width: 90%;
+        height: 100%;
+    }
+    .card {
+        min-height: 250px;
+        max-height: 450px;
+        width: 90%;
+        margin: 15px;
+    }
+    .card-text {
+        color: white;
+        font-size: 18pt;
+        text-shadow: 0px 0px 2px black;
+    }
+    .card-text-description {
+        font-family: "Source Sans Pro";
+        color: rgb(230, 230, 230);
+        font-size: 16pt;
+        word-wrap: break-word;
+        white-space: initial;
+    }
+    .card-tag {
+        font-size: 14pt;
+        margin: 5px 5px 5px 5px;
+    }
+    .card-tag:hover {
+        box-shadow: 0px 0px 15px 1px rgba(255, 255, 255, .2), inset 0px 0px 15px 1px rgba(255, 255, 255, .2);
+        border: 1px solid rgba(255, 255, 255, 1);
+        text-shadow: 0px 4px 12px rgba(0, 0, 0, 1);
+        user-select: none;
+    }
+    .nav {
+        position: sticky;
+        width: 100%;
+        box-sizing: border-box;
+        padding: none;
+        margin: 0;
+        height: 95px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-menu {
+        padding-right: 5px;
+    }
+    .nav-menu-button {
+        display: inline-block;
+        font-family: "Source Sans Pro";
+        border: 3px solid rgba(255, 255, 255, .8);
+        color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        height: 48px;
+        width: 75px;
+        outline: none;
+        background: none;
+        font-size: 10pt;
+        text-transform: uppercase;
+        margin: 0px 7px 0px 7px;
+        transition: all .5s;
+    }
+    .nav-menu-button:hover {
+        box-shadow: 0px 0px 15px 1px rgba(255, 255, 255, .2), inset 0px 0px 15px 1px rgba(255, 255, 255, .1);
+        text-shadow: 0px 0px 5px rgba(255, 255, 255, .15);
+        border: 3px solid white;
+        color: white;
+    }
+    .nav-title {
+        text-shadow: 0px 1px 2px rgba(0, 0, 0, .1);
+        font-size: 30pt;
+        box-sizing: border-box;
+        padding: 20px;
+        margin: 0;
+        color: rgb(255, 252, 220);
+    }
+    .nav-logo {
+        width: 50px;
+        height: 50px;
+        margin-left: 20px;
+    }
+}
+
+
+/*  desktop */
+
+@media only screen and (min-width: 1000px) and (min-device-width:1000px) {
     .content-block {
         display: flex;
         align-items: center;
@@ -108,6 +220,9 @@ a:visited {
         max-width: 500px;
         margin: 15px;
     }
+    .card-tag {
+        font-size: 15pt;
+    }
     .card-tag:hover {
         box-shadow: 0px 0px 15px 1px rgba(255, 255, 255, .2), inset 0px 0px 15px 1px rgba(255, 255, 255, .2);
         border: 1px solid rgba(255, 255, 255, 1);
@@ -120,7 +235,7 @@ a:visited {
         box-sizing: border-box;
         padding: none;
         margin: 0;
-        height: 100px;
+        height: 85px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -131,7 +246,7 @@ a:visited {
     }
     .nav-menu-button {
         font-family: "Source Sans Pro";
-        border: 2.5px solid rgba(255, 255, 255, 0.9);
+        border: 3px solid rgba(255, 255, 255, 0.9);
         color: rgba(255, 255, 255, 0.9);
         border-radius: 10px;
         outline: none;
@@ -146,7 +261,7 @@ a:visited {
     .nav-menu-button:hover {
         box-shadow: 0px 0px 15px 1px rgba(255, 255, 255, .2), inset 0px 0px 15px 1px rgba(255, 255, 255, .1);
         text-shadow: 0px 0px 5px rgba(255, 255, 255, .15);
-        border: 2.5px solid white;
+        border: 3px solid white;
         color: white;
     }
     .nav-title {
@@ -160,7 +275,7 @@ a:visited {
     .nav-logo {
         width: 50px;
         height: 50px;
-        padding: 20px;
+        margin-left: 20px;
     }
 }
 
