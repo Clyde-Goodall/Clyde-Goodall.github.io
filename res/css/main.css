@@ -20,10 +20,30 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+
+/* nav stuff */
+
 .nav {
-    background: rgb(20, 31, 37);
+    background: rgba(20, 31, 37, .68);
+    backdrop-filter: blur(20px);
     border-bottom: 1px solid rgb(12, 19, 24);
     box-shadow: 2px 1px 20px rgba(0, 0, 0, .3);
+}
+
+.nav-menu-button {
+    background: rgba(255, 255, 255, .8);
+    background-image: linear-gradient(to top right, rgb(125, 150, 156), rgb(137, 160, 165), rgb(149, 169, 174), rgb(160, 179, 183), rgb(172, 188, 192), rgb(184, 198, 201), rgb(196, 207, 210), rgb(208, 217, 219), rgb(220, 226, 228), rgb(231, 236, 237), rgb(243, 245, 246), rgb(255, 255, 255));
+    border-radius: 4px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
+    color: rgb(20, 31, 37);
+    border: 1px rgba(0, 0, 0, .3);
+    font-family: "Source Sans Pro";
+}
+
+.nav-menu-button:hover {
+    box-shadow: 0px 0px 15px 1px rgba(255, 255, 255, .1);
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, .5);
+    color: rgb(13, 20, 24);
 }
 
 
@@ -226,14 +246,10 @@ a:visited {
     }
     .nav-menu-button {
         display: inline-block;
-        font-family: "Source Sans Pro";
-        border: 3px solid rgba(255, 255, 255, .8);
-        color: rgba(255, 255, 255, 0.9);
         border-radius: 10px;
         height: 48px;
         width: 75px;
         outline: none;
-        background: none;
         font-size: 10pt;
         text-transform: uppercase;
         margin: 0px 7px 0px 7px;
@@ -369,24 +385,13 @@ a:visited {
         padding-right: 20px;
     }
     .nav-menu-button {
-        font-family: "Source Sans Pro";
-        border: 3px solid rgba(255, 255, 255, 0.9);
-        color: rgba(255, 255, 255, 0.9);
-        border-radius: 10px;
         outline: none;
-        background: none;
         font-size: 18pt;
         height: 55px;
         width: 140px;
         text-transform: uppercase;
         margin: 0px 20px 0px 20px;
         transition: all .5s;
-    }
-    .nav-menu-button:hover {
-        box-shadow: 0px 0px 15px 1px rgba(255, 255, 255, .2), inset 0px 0px 15px 1px rgba(255, 255, 255, .1);
-        text-shadow: 0px 0px 5px rgba(255, 255, 255, .15);
-        border: 3px solid white;
-        color: white;
     }
     .nav-title {
         text-shadow: 0px 1px 2px rgba(0, 0, 0, .1);
