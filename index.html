@@ -13,50 +13,72 @@
     <!-- navbar -->
     <section class="nav">
         <section class="nav-splash">
-            <a href="#home"><img class="nav-logo" src="res/img/logo.svg"></a>
+            Clyde Goodall
         </section>
 
         <section class="nav-menu">
-            <a href="https://github.com/Clyde-Goodall" target="#"><input type="button" class="nav-menu-button" value="Github"></a>
-            <a href="https://www.linkedin.com/in/clyde-goodall-3b0145101/" target="#"><input type="button" class="nav-menu-button" value="LinkedIn"></a>
+            <a href="#about"><input type="button" class="nav-menu-button" value="About Me"></a>
+            <a href="#projects"><input type="button" class="nav-menu-button" value="Projects"></a>
             <a href="#contact"><input type="button" class="nav-menu-button" value="Contact"></a>
+            <a href="https://www.linkedin.com/in/clyde-goodall-3b0145101/" target="#"><input type="button" class="nav-menu-button" value="LinkedIn"></a>
         </section>
     </section>
-    <!-- card grid -->
-    <section class="content-block">
+    <!-- about me -->
+    <section class="content-block" id="about">
+        <section class="content-block-inner large-override">
+            <section class="card card-large card-shadow">
+
+                <p class="card-text">About Me</p>
+
+                <p class="card-text-description about-me-desc">I'm Clyde, a developer from South Florida. My language of choice is Python (but I'll speak English if you want me to). When I'm not writing code I'm recording music, building terrariums, biking, or exploring nature preserves. I also own
+                    3 chickens.</p>
+                <!-- gallery -->
+                <section class="img-container">
+                    <img class="hov-75 card-shadow" src="res/img/self.jpg" loading="lazy">
+                    <img class="hov-75 card-shadow" src="res/img/caterpillar.jpg">
+                    <img class="hov-75 card-shadow" src="res/img/chick.jpg">
+                    <img class="hov-75 card-shadow" src="res/img/Snapchat-1184331710.jpg">
+                </section>
+
+            </section>
+        </section>
+    </section>
+    <!-- projects -->
+    <section class="content-block alt" id="projects">
+
         <section class="content-block-inner">
             <section class="card card-shadow">
                 <a href="https://github.com/Clyde-Goodall/pivarium-hub" target="#">
                     <p class="card-text">Pivarium <span class="material-icons">open_in_new</span></p>
                 </a>
                 <p class="card-text-description">A vivarium monitoring system frontend + backend to track changes in sensor data using Raspberry pis.</p>
-                <p class="card-tag python">Python</p>
-                <p class="card-tag django">Django</p>
-                <p class="card-tag websocket">Websocket</p>
+                <p class="card-tag default">Python</p>
+                <p class="card-tag default">Django</p>
+                <p class="card-tag default">Websocket</p>
             </section>
             <section class="card card-shadow">
                 <a href="https://github.com/Clyde-Goodall/Uptimer" target="#">
                     <p class="card-text">Uptimer <span class="material-icons">open_in_new</span></p>
                 </a>
                 <p class="card-text-description">Network outage logger. Records all outages into a CSV file, and runs silently in the background as a tray application.</p>
-                <p class="card-tag python">Python</p>
+                <p class="card-tag default">Python</p>
             </section>
             <section class="card card-shadow">
                 <a href="https://github.com/Clyde-Goodall/ExpressOrder" target="#">
                     <p class="card-text">Express Order <span class="material-icons">open_in_new</span></p>
                 </a>
                 <p class="card-text-description">Cross-platform lunch ordering app prototype for my PBSD internship. Built with mobile platforms in mind.</p>
-                <p class="card-tag cordova">Cordova</p>
-                <p class="card-tag nodejs">NodeJS</p>
-                <p class="card-tag mongodb">MongoDB</p>
+                <p class="card-tag default">Cordova</p>
+                <p class="card-tag default">NodeJS</p>
+                <p class="card-tag default">MongoDB</p>
             </section>
             <section class="card card-shadow">
                 <a href="https://github.com/Clyde-Goodall/Clyde-Goodall.github.io" target="#">
                     <p class="card-text">This portfolio <span class="material-icons">open_in_new</span></p>
                 </a>
                 <p class="card-text-description">Pure HTML and CSS, by hand. No Javascript to be found. Lot's of flexbox, though :)</p>
-                <p class="card-tag html">HTML</p>
-                <p class="card-tag css">CSS</p>
+                <p class="card-tag default">HTML</p>
+                <p class="card-tag default">CSS</p>
             </section>
 
         </section>
@@ -78,16 +100,13 @@
         </section>
     </section>
 
-    <section class="content-block">
-        <section class="content-block-inner">
-        </section>
-    </section>
     <!-- footer, obviously -->
     <section class="footer">
         <section>
             Clyde Goodall © 2021
             <br>
-            <a href="mailto:clyde.goodall.cs@gmail.com">Clyde.Goodall.CS@gmail.com</a>
+            <a href="mailto:clyde.goodall.cs@gmail.com">Clyde.Goodall.CS@gmail.com</a><br>
+            <a href="https://www.linkedin.com/in/clyde-goodall-3b0145101/" target="#">LinkedIn</a>
         </section>
 
     </section>
