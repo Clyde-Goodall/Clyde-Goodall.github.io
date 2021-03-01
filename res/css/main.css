@@ -479,7 +479,7 @@ a:visited {
     .card-large {
         min-width: 100%;
         min-height: 600px;
-        background: rgba(24, 37, 44, .5);
+        background: rgba(24, 37, 44, .25);
         backdrop-filter: blur(10px);
     }
     .card-large .card-text {
