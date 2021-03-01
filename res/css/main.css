@@ -124,6 +124,7 @@ a {
 .alt {
     background: rgba(0, 0, 0, .1);
     border-top: 1px solid rgba(0, 0, 0, .1);
+    z-index: 5000;
 }
 
 a:visited {
@@ -138,10 +139,19 @@ a:visited {
     /* padding: 200px 0px 200px 0px; */
 }
 
-.ab {
+.ab::before {
+    content: "";
+    background-size: cover;
     background: url(../img/ab.png);
     background-color: rgb(40, 58, 68);
     background-blend-mode: multiply;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    opacity: .4;
+    z-index: 0;
 }
 
 
@@ -479,8 +489,8 @@ a:visited {
     .card-large {
         min-width: 100%;
         min-height: 600px;
-        background: rgba(24, 37, 44, .25);
-        backdrop-filter: blur(10px);
+        background: rgba(24, 37, 44, .6);
+        backdrop-filter: blur(20px);
     }
     .card-large .card-text {
         font-size: 40pt;
